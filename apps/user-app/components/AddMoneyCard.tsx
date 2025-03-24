@@ -30,7 +30,7 @@ export const AddMoney = () => {
         <TextInput
           label={"Amount"}
           placeholder={"Amount"}
-          onChange={(value) => setAmount(value)}
+          onChange={(value) => setAmount(Number(value))}
         />
         <div className="py-4 text-left">Bank</div>
         <Select
